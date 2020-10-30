@@ -16,7 +16,7 @@ export const ContryPicker = ({handlecountrychange}) => {
         <div>
            <FormControl>
                 <NativeSelect defaultValue="" onChange={(e)=>handlecountrychange(e.target.value)}>
-                    <option value="global">
+                    <option value="">
                         global
                     </option>
                  {countries.map((country, i) => <option key={i} value={country}>{country}</option>)}
